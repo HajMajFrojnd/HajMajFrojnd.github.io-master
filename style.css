@@ -398,6 +398,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 880px){
+  .nav-btn {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 850px) {
   .grid-container {
     -ms-grid-columns: 1fr 8px 1fr 8px 1fr 8px 1fr;
@@ -414,9 +420,6 @@ body {
   }
   .breadcrumb{
       grid-column: 1/5;
-  }
-  .nav-btn {
-    display: none;
   }
 
   .navigation {
