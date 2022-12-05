@@ -1,0 +1,221 @@
+.article-container {
+  margin-top: 8.5rem;
+}
+.article-info {
+  grid-column: 1/8;
+  display: flex;
+  flex-flow: column;
+  background-color: var(--black);
+}
+.ar-main-image {
+  width: 100%;
+  object-fit: cover;
+  height: 24rem;
+}
+.ar-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  background-color: var(--black);
+  width: 100%;
+}
+.ar-writer {
+  display: flex;
+  align-items: center;
+}
+.author {
+  height: 3rem;
+  border-radius: 50%;
+}
+.ar-writer img {
+  width: 3rem;
+  height: 3rem;
+  object-position: center;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+.ar-publish {
+  display: flex;
+  align-items: center;
+}
+.ar-publish div {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+}
+.ar-publish div span {
+  margin-right: 0.7rem;
+}
+.ar-publish div img {
+  margin-right: 2rem;
+  height: 1.5rem;
+}
+.share-top {
+  grid-column: 8/9;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.share-button {
+  width: 2.7rem;
+  height: 2.7rem;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 1.2rem;
+}
+#linked {
+  background-image: url(https://webspiked.com/blog/images/Icon\ awesome-linkedin.svg);
+}
+#twit {
+  background-image: url(https://webspiked.com/blog/images/Icon\ awesome-twitter.svg);
+}
+#face {
+  background-image: url(https://webspiked.com/blog/images/Icon\ awesome-facebook.svg);
+}
+article {
+  grid-column: 1/8;
+  display: flex;
+  flex-flow: column;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 8rem;
+}
+article h1 {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+article p {
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+article h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+.article-images {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 2rem;
+}
+.article-images div {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--black);
+}
+.article-images div img {
+  margin-right: 0.7rem;
+}
+.share-bottom {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--black);
+}
+.share-bottom div {
+  display: flex;
+}
+.share-bottom span {
+  margin-bottom: 1rem;
+}
+.share-btn {
+  padding: 1.5rem 4rem;
+  border-radius: 25px;
+  display: flex;
+}
+.share-btn + a {
+  margin-left: 2rem;
+}
+.share-btn img {
+  height: 2.7rem;
+  width: 2.7rem;
+  object-fit: contain;
+  object-position: center;
+}
+#fc {
+  background-color: #00286d;
+}
+#tw {
+  background-color: #6dbbff;
+}
+#in {
+  background-color: #726dff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .article-info {
+    grid-column: 1/10;
+  }
+  .share-top {
+    grid-column: 10/11;
+  }
+  article {
+    grid-column: 1/10;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .share-top {
+    display: none;
+  }
+  .article-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .article-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 5rem;
+  }
+  .share-btn {
+    padding: 1rem 2rem;
+  }
+  .ar-main-image {
+    height: 15rem;
+  }
+  .ar-info {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .ar-writer {
+    margin-bottom: 1rem;
+  }
+  article h2 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
+  article h1 {
+    margin-bottom: 0.7rem;
+  }
+  .article-info {
+    grid-column: 1/5;
+  }
+  article {
+    grid-column: 1/5;
+  }
+  .breadcrumb {
+    grid-column: 1/5;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
